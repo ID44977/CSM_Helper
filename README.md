@@ -2,7 +2,7 @@
 自动生成BDMV文件结构，复制除.m2ts外的所有文件和结构，用以配合外挂结构实现蓝光原盘外挂字幕
 
 蓝光原盘结构
-Source目录："F:\\ACG\\Animate\\[BDMV]"
+Source目录："F:\\ACG\\Animate\\[BDMV]"\n
 Target目录："F:\\ACG\\Animate\\[BDMV] 加流重灌\\"
 输入：番剧名bdmv_name、分卷个数vol_num
 在Target目录下生成名为"bdmv_name"的文件夹，其拥有子目录"Vol.1_SUB~Vol.n_SUB"
