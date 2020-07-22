@@ -13,8 +13,8 @@ Target目录："F:\\ACG\\Animate\\[BDMV] 加流重灌\\"
 字幕文件Source目录："F:\\BDMV DIY\\ALL_SUB\\"
 番剧外挂字幕项目资源目录："F:\\BDMV DIY\\"
 输入：番剧名bdmv_name、分卷个数vol_num、每卷集数ep_num
-在资源目录下生成名为"bdmv_name"的文件夹，其拥有子目录"Vol.1_SUBDIY~Vol.n_SUBDIY"
-从字幕文件Source目录中将ass字幕文件按卷-集方式分别复制至目录"Vol.1_SUBDIY~Vol.n_SUBDIY"中
+在资源目录下生成名为"bdmv_name"的文件夹，其拥有子目录"Vol.1_SUBDIY--Vol.n_SUBDIY"
+从字幕文件Source目录中将ass字幕文件按卷-集方式分别复制至目录"Vol.1_SUBDIY--Vol.n_SUBDIY"中
 
 待完成：
 整合制作好的字幕流至外挂结构中
