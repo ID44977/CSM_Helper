@@ -3,8 +3,8 @@ import tkinter as tk
 from tkinter import filedialog
 root = tk.Tk()
 
-SUB_Dir = "F:/ACG/Animate/[BDMV] 加流重灌/"
-BDMV_Dir = "F:/ACG/Animate/[BDMV]"
+SUB_Dir = "F:\\ACG\\Animate\\[BDMV] 加流重灌\\"
+BDMV_Dir = "F:\\ACG\\Animate\\[BDMV]"
 
 print(u'测试开始')
 
@@ -15,7 +15,7 @@ print("成功创建文件夹" + bdmv_name)
 vol_num = input("输入分卷个数：")
 print("vol_num = ", vol_num)
 for i in range(1, int(vol_num)+1):
-    os.mkdir(SUB_Dir + bdmv_name + "/Vol." + str(i) + "_SUB")
+    os.mkdir(SUB_Dir + bdmv_name + "\\Vol." + str(i) + "_SUB")
 print("成功创建目录")
 
 
@@ -25,7 +25,7 @@ for i in range(1, int(vol_num)+1):
 
 var_target = []
 for i in range(1, int(vol_num)+1):
-    var_target.append(SUB_Dir + bdmv_name + "/Vol." + str(i) + "_SUB")
+    var_target.append(SUB_Dir + bdmv_name + "\\Vol." + str(i) + "_SUB")
 
 #print('echo d | xcopy "' + var_source + '" "' + var_target + '" /s /e /exclude:uncopy.txt')
 for i in range (0, int(vol_num)):
