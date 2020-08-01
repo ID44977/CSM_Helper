@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import filedialog
 root = tk.Tk()
 
-SUBDIY_Dir = "F:\\BDMV DIY\\"
+SUBDIY_Dir = "F:\\ACG\\Animate\\[BDMV] 素材\\"
 SUBDIY_SOURCE_Dir = "ALL_SUB\\"
 
 bdmv_name = input("输入名称：")

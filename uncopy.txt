@@ -1,1 +1,7 @@
 .m2ts
+.wav
+.cue
+.png
+.jpg
+.tiff
+.log
