@@ -27,12 +27,21 @@ print("ep_num = ", ep_num)
 #xcopy "F:\BDMV DIY\ALL_SUB\Date A Live2\[CASO&SumiSora][Date_A_Live_II][BDRip][01][x264_flac](4CDCAA43).sc.ass" "F:\BDMV DIY\Date A Live2\Vol.1_SUBDIY"
 
 subfile_dir = SUBDIY_Dir + SUBDIY_SOURCE_Dir + bdmv_name
-#print(subfile_dir)
-subfile_num = glob.glob(subfile_dir + "\\*.ass")
+print(subfile_dir)
+os.chdir(subfile_dir)
+subfile_num = glob.glob("*.ass")
+#subfile_num = glob.glob('F:/ACG/Animate/[BDMV] 素材/ALL_SUB/路人女主的养成方法/*.ass')
+
+'''
+subfile_num = 0
+for root,dirs,files in os.walk(subfile_dir):
+    for each in files:
+        subfile_num += 1
+print(subfile_num)
+'''
+
 for files in os.walk(subfile_dir):
-    #print(subfile_dir + '\\' + files[2][0])
+    print(subfile_dir + '\\' + files[2][0])
     for i in range(1, int(vol_num)+1):
         for j in range(0, int(ep_num)):
-            #print("文件个数：" + str(len(subfile_num)-1))
-            if int(i)*2-1-int(j) <= len(subfile_num)-1:
-                os.system('xcopy "' + subfile_dir + '\\' + files[2][int(i)*2-1-int(j)] + '" "' + SUBDIY_Dir + bdmv_name + '\\Vol.' + str(i) + '_SUBDIY" /c')
+            os.system('xcopy "' + subfile_dir + '\\' + files[2][(i-1)*int(ep_num) + j] + '" "' + SUBDIY_Dir + bdmv_name + '\\Vol.' + str(i) + '_SUBDIY" /c')
